@@ -295,6 +295,3 @@
 	}; // $.fn.ispyscroller
 
 })(jQuery);
-
-// calls the init method
-$('#ispy-scroller').ispyscroller();
