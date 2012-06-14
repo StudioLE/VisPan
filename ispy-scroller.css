@@ -1,0 +1,118 @@
+/*
+	Scroller 
+*/
+
+#ispy-scroller {
+	width: 700px;
+	height: 500px;
+}
+
+.ispy-scroller, .ispy-scroller-frame {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.ispy-scroller-slide, .ispy-scroller-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	clear: both;
+	z-index: 1;
+	background: red;
+	box-shadow: 0 0 50px black;
+}
+
+.ispy-scroller-current {
+	z-index: 5;
+}
+
+.ispy-scroller-shadow {
+	width: 900px;
+	height: 900px;
+	z-index: 4;
+	background: black;
+}
+
+.ispy-scroller-next {
+	z-index: 3;
+}
+
+.ispy-scroller-slide img {
+	display: block;
+}
+
+.ispy-scroller-btn-previous, .ispy-scroller-btn-next {
+	margin: auto;
+	width: 50px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+	cursor: pointer;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 82px;
+	text-align: center;
+	text-shadow: 0 0 12px black;
+}
+
+.ispy-scroller-btn-next {
+	right: 0;
+}
+
+
+
+#screenshot-scroller {
+	width: 700px;
+	height: 450px;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+#screenshot-scroller .page.current {
+	z-index: 5;
+}
+
+#screenshot-scroller .page.next {
+	z-index: 3;
+}
+
+#screenshot-scroller .shadow {
+	width: 900px;
+	height: 900px;
+	z-index: 4;
+	background: #000;
+}
+
+#screenshot-scroller .page img {
+	display: block;
+	width: 700px;
+}
+
+
+
+
+
+
+#next, #previous {
+	width: 150px;
+	height: 58px;
+	position: absolute;
+	top: 190px;
+	right: -160px;
+	bottom: 50px;
+	z-index: 10;
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: right;
+	background: blue;
+}
+
+#next a, #previous a, {	
+	color: white;
+	text-shadow: 0 0 20px black;
+}
