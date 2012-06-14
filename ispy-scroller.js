@@ -30,8 +30,6 @@ return this.each(function(index) {
 
 	var maxWidth = $(this).width();
 
-	console.log($(this));
-
 	// Lets do some prep work
 	$(this).children().each(function(index) {
 		$(this).addClass('ispy-scroller-slide').css('width', maxWidth);
