@@ -22,18 +22,18 @@ return this.each(function(index) {
 
 	// Lets do some prep work
 	$(this).children().each(function(index) {
-		$(this).addClass('ispy-scroller-slide').css('width', maxWidth);
+		$(this).addClass('vispan-slide').css('width', maxWidth);
 		if(index === 0) {
-			$(this).addClass('ispy-scroller-current');
+			$(this).addClass('vispan-current');
 		}
 	});
-	$(this).append('<div class="ispy-scroller-shadow"></div>');
-	$(this).addClass('ispy-scroller').wrapInner('<div class="ispy-scroller-frame" />').append('<div class="ispy-scroller-btn-previous">&lsaquo;</div><div class="ispy-scroller-btn-next">&rsaquo;</div>');
+	$(this).append('<div class="vispan-shadow"></div>');
+	$(this).addClass('vispan').wrapInner('<div class="vispan-frame" />').append('<div class="vispan-btn-previous">&lsaquo;</div><div class="vispan-btn-next">&rsaquo;</div>');
 
 
 	// Temporarily store this for use in scroller class
 	var parent = $(this);
-	var frame = $(this).children('.ispy-scroller-frame:first');
+	var frame = $(this).children('.vispan-frame:first');
 
 	// Frame height same as this
 	frame.height($(this).height());
@@ -49,13 +49,13 @@ return this.each(function(index) {
 		this.frame_top = this.frame.offset().top;
 		this.frame_left = this.frame.offset().left;		
 		this.slide = {
-			current: this.frame.children('.ispy-scroller-current:first')
+			current: this.frame.children('.vispan-current:first')
 		};
-		this.shadow = this.frame.children('.ispy-scroller-shadow:first');
+		this.shadow = this.frame.children('.vispan-shadow:first');
 		this.button = {
-			previous: this.parent.children('.ispy-scroller-btn-previous:first'),
-			next: this.parent.children('.ispy-scroller-btn-next:first'),
-			width: $('.ispy-scroller-btn-previous:first').width()
+			previous: this.parent.children('.vispan-btn-previous:first'),
+			next: this.parent.children('.vispan-btn-next:first'),
+			width: $('.vispan-btn-previous:first').width()
 		};
 
 		// Variables
@@ -203,23 +203,23 @@ return this.each(function(index) {
 		// Next or previous?
 		if(which == 'next') {
 			// What's next?
-			scroller.slide.next = scroller.slide.current.next('.ispy-scroller-slide');
+			scroller.slide.next = scroller.slide.current.next('.vispan-slide');
 			if(scroller.slide.next.length <= 0) {
 				// If there are no more slides go back to the start..
-				scroller.slide.next = scroller.frame.children('.ispy-scroller-slide:first');
+				scroller.slide.next = scroller.frame.children('.vispan-slide:first');
 			}
 		}
 		else {
 			// What's next?
-			scroller.slide.next = scroller.slide.current.prev('.ispy-scroller-slide');
+			scroller.slide.next = scroller.slide.current.prev('.vispan-slide');
 			if(scroller.slide.next.length <= 0) {
 				// If there are no more pages go back to the start..
-				scroller.slide.next = scroller.frame.children('.ispy-scroller-slide:last');
+				scroller.slide.next = scroller.frame.children('.vispan-slide:last');
 			}
 		}
 		
 		// Prepare the next page
-		scroller.slide.next.addClass('ispy-scroller-next');
+		scroller.slide.next.addClass('vispan-next');
 		
 		// Add a fading shadow effect as the page turns
 		scroller.shadow.css('opacity', settings.shadow_overlay_opacity).fadeOut(settings.slide_change_duration);
@@ -242,11 +242,11 @@ return this.each(function(index) {
 			scroller.shadow.css('opacity', scroller.shadow.opacity ).show();
 			
 			// Reset the slide
-			scroller.slide.current.css('marginLeft', 0).removeClass('ispy-scroller-current');
+			scroller.slide.current.css('marginLeft', 0).removeClass('vispan-current');
 			
 			// Change the current slide
 			scroller.slide.current = scroller.slide.next;
-			scroller.slide.current.removeClass('ispy-scroller-next').addClass('ispy-scroller-current');
+			scroller.slide.current.removeClass('vispan-next').addClass('vispan-current');
 			
 		});
 	} // change_slide() 
