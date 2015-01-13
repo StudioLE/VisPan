@@ -14,7 +14,7 @@ Download the following:
 The HTML:
 
 ```
-<div id="ispy-scroller">
+<div id="vispan">
 <div><img src="assets/img/web/home.jpg"></div>
 <div><img src="assets/img/web/about.jpg"></div>
 <div><img src="assets/img/web/contact-us.jpg"></div>
@@ -24,5 +24,5 @@ The HTML:
 The javascript:
 
 ```
-$('#ispy-scroller').ispyscroller();
+$('#ispy-scroller').vispan();
 ```
