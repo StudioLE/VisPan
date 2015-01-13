@@ -15,9 +15,9 @@ The HTML:
 
 ```
 <div id="vispan">
-<div><img src="assets/img/web/home.jpg"></div>
-<div><img src="assets/img/web/about.jpg"></div>
-<div><img src="assets/img/web/contact-us.jpg"></div>
+	<div><img src="assets/img/web/home.jpg"></div>
+	<div><img src="assets/img/web/about.jpg"></div>
+	<div><img src="assets/img/web/contact-us.jpg"></div>
 </div>
 ```
 
