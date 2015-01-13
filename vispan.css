@@ -1,10 +1,10 @@
-.ispy-scroller, .ispy-scroller-frame {
+.vispan, .vispan-frame {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
 }
 
-.ispy-scroller-slide, .ispy-scroller-shadow {
+.vispan-slide, .vispan-shadow {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -14,26 +14,26 @@
 	box-shadow: 0 0 50px #000;
 }
 
-.ispy-scroller-current {
+.vispan-current {
 	z-index: 5;
 }
 
-.ispy-scroller-shadow {
+.vispan-shadow {
 	width: 900px;
 	height: 900px;
 	z-index: 4;
 	background: #000;
 }
 
-.ispy-scroller-next {
+.vispan-next {
 	z-index: 3;
 }
 
-.ispy-scroller-slide img {
+.vispan-slide img {
 	display: block;
 }
 
-.ispy-scroller-btn-previous, .ispy-scroller-btn-next {
+.vispan-btn-previous, .vispan-btn-next {
 	margin: auto;
 	width: 50px;
 	height: 100px;
@@ -50,6 +50,6 @@
 	text-shadow: 0 0 12px #000;
 }
 
-.ispy-scroller-btn-next {
+.vispan-btn-next {
 	right: 0;
 }

@@ -1,14 +1,4 @@
-
-//  iSpy Scroller 
-//  DEVELOPED BY LAURENCE ELSDON
-//  for iSpyCreativity.com
-//  If you like my code: hi@ispycreativity.com
-// --------------------------------------------------
-//  Changelog
-//  2012-06-14 replaced scrollTo
-//  2012-06-14 now works on multiple elements on the same page (hopefully)
-// --------------------------------------------------
-(function($){ $.fn.ispyscroller = function(options) {
+(function($){ $.fn.vispan = function(options) {
 return this.each(function(index) {
 
 	// 	SETTINGS
@@ -261,4 +251,4 @@ return this.each(function(index) {
 		});
 	} // change_slide() 
 }); // return this.each()
-}; /* $.fn.ispyscroller */ })(jQuery);
+}; /* $.fn.vispan */ })(jQuery);
