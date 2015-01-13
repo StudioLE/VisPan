@@ -1,18 +1,16 @@
-iSpy Scroller
-========
+# VisPan - Visual Pan
 
+A jQuery plugin for panning website visuals and screenshots in a fixed &lt;div&gt;
 
-##Introduction
-A jQuery plugin for displaying website screenshots in a fixed &lt;div&gt;
+## Installation
 
-##Installation
 Download the following:
 
-* ispy-scroller.css
-* ispy-scroller.js
+- vispan.css
+- vispan.js
 
+## Usage
 
-##Usage
 The HTML:
 
 ```
