@@ -1,6 +1,6 @@
 # VisPan - Visual Pan
 
-A jQuery plugin for panning website visuals and screenshots in a fixed &lt;div&gt;
+A jQuery plugin for panning website visuals and screenshots by mouse movement in a fixed height &lt;div&gt;
 
 ## Installation
 
