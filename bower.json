@@ -1,0 +1,23 @@
+{
+  "name": "vispan",
+  "description": "A jQuery plugin for panning website visuals and screenshots by mouse movement in a fixed height <div>",
+  "version": "1.0.0",
+  "homepage": "https://github.com/StudioLE/VisPan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StudioLE/VisPan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StudioLE/VisPan/issues"
+  },
+  "license": "MIT",
+  "main": "dist/js/vispan.js",
+  "ignore": [
+    "*/.*",
+    "node_modules",
+    "src",
+    "gulpfile.js",
+    "*.json",
+    "*.md"
+  ]
+}
