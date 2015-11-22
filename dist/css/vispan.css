@@ -10,7 +10,7 @@
 	left: 0;
 	clear: both;
 	z-index: 1;
-	background: red;
+	background: #000;
 	box-shadow: 0 0 50px #000;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .vispan-slide img {
+	width: 100%;
 	display: block;
 }
 
