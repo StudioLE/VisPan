@@ -31,10 +31,18 @@ Format your website visuals/slides in the following format
 
 ``` html
 <div id="visuals">
-	<div><img src="assets/img/web/home.jpg"></div>
-	<div><img src="assets/img/web/about.jpg"></div>
-	<div><img src="assets/img/web/contact-us.jpg"></div>
+  <div><img src="assets/img/web/home.jpg"></div>
+  <div><img src="assets/img/web/about.jpg"></div>
+  <div><img src="assets/img/web/contact-us.jpg"></div>
 </div>
+```
+
+Give `#visuals` a fixed height
+
+``` css
+#visuals {
+  height: 420px;
+}
 ```
 
 Finally, call the vispan method in your javascript
