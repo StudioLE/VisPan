@@ -2,6 +2,8 @@
 
 A jQuery plugin for panning website visuals and screenshots by mouse movement in a fixed height &lt;div&gt;
 
+[Demo](https://studiole.uk/code/vispan)
+
 ## Install
 
 Packages are available via Bower and NPM
